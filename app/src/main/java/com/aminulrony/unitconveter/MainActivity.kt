@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -24,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    unitConverter()
+                    UnitConverter()
                 }
             }
         }
@@ -32,39 +33,22 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun unitConverter(){
+fun UnitConverter(){
     Column {
 //        Here all the UI elements will be stacked below each other
+        Text("Md Aminul Islam Rony")
+        OutlinedTextField(value ="Enter your" , onValueChange = {
+
+        })
         Row {
 //            Here all the element will be stacked next to each other
-            Greeting("Rony")
-            Greeting("Rony")
-        }
-        Row {
-            Greeting("Rony")
-            Greeting("Rony")
-            Greeting("Rony")
-            Greeting("Rony")
-        }
-        Row {
-            Greeting("Rony")
-            Greeting("Rony")
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
+@Preview
 @Composable
-fun GreetingPreview() {
-    UnitConveterTheme {
-        Greeting("Android")
-    }
+fun UnitConverterPreview(){
+    UnitConverter()
 }
