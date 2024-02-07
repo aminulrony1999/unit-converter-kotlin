@@ -35,9 +35,19 @@ class MainActivity : ComponentActivity() {
 fun unitConverter(){
     Column {
 //        Here all the UI elements will be stacked below each other
-        Greeting("Rony")
-        Greeting("Rony")
         Row {
+            Greeting("Rony")
+            Greeting("Rony")
+        }
+        Row {
+            Greeting("Rony")
+            Greeting("Rony")
+            Greeting("Rony")
+            Greeting("Rony")
+        }
+        Row {
+            Greeting("Rony")
+            Greeting("Rony")
         }
     }
 }
