@@ -36,6 +36,7 @@ fun unitConverter(){
     Column {
 //        Here all the UI elements will be stacked below each other
         Row {
+//            Here all the element will be stacked next to each other
             Greeting("Rony")
             Greeting("Rony")
         }
